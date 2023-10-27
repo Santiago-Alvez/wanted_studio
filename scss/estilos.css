@@ -66,13 +66,32 @@ body {
   text-align: center;
   color: red;
 }
+.menu a:hover {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+}
+
+article h1 {
+  margin-bottom: 3rem;
+}
 
 h1 {
   font-family: "Yeseva One", cursive;
   font-size: 50px;
   color: rgb(254, 252, 252);
   text-align: center;
-  margin-top: 4rem;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(242, 242, 244);
+  text-align: center;
+}
+
+h3 {
+  color: floralwhite;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu_item a {
@@ -103,22 +122,6 @@ h1 {
   margin: 0 auto;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: rgb(242, 242, 244);
-  margin-right: 4rem;
-  margin-top: 2rem;
-  padding: 5rem;
-  height: auto;
-  text-align: center;
-  border-radius: 30px;
-}
-
-h3 {
-  color: floralwhite;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container_form {
@@ -155,7 +158,6 @@ label {
   width: 100%;
   background-color: rgb(84, 84, 88);
   padding: 1, 5rem;
-  min-height: 150px;
 }
 
 .footer-imgs {
@@ -188,7 +190,7 @@ p {
 
 .info_principal {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   place-items: center;
   margin-top: 5rem;
   gap: 3rem;
@@ -205,26 +207,48 @@ p {
   height: 5rem;
 }
 
-table {
-  font-size: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  width: 500px;
-  margin-top: 3rem;
-  color: red;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+.precios {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 60%;
+  margin: 10rem auto 4rem auto;
+}
+
+.contenedor_precio {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid red;
+}
+
+.cursos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+
+.underline p {
+  border-bottom: 4px solid blue;
+  font-style: italic;
+  font-size: 1rem;
 }
 
 footer {
   margin-top: 4rem;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 530px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
   }
+  .precios, .cursos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 950px) {
   .info_principal {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }/*# sourceMappingURL=estilos.css.map */
