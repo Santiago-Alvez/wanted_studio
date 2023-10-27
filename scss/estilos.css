@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Sedgwick+Ave+Display&family=Skranji&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Sedgwick+Ave+Display&family=Skranji&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Pixelify+Sans:wght@400;700&family=Playfair+Display:wght@900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Josefin+Slab:ital,wght@1,300&family=Pixelify+Sans:wght@400;700&family=Playfair+Display:wght@900&family=Yeseva+One&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Holtwood+One+SC&family=Josefin+Slab:ital,wght@1,300&family=Pixelify+Sans:wght@400;700&family=Playfair+Display:wght@900&family=Yeseva+One&family=Young+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  color: brown;
+  background: rgb(255, 191, 71);
+  margin-top: 2rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+}
+
+header {
+  margin-bottom: 4rem;
+  gap: 20px;
+  grid-gap: 20px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+form label {
+  color: rgb(234, 234, 234);
+}
+
+body {
+  padding: 2rem;
+  background-color: rgb(9, 9, 9);
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+.menu li {
+  font-family: "Playfair Display", serif;
+  list-style-type: none;
+  font-size: 30px;
+  display: inline;
+  margin-right: 20px;
+  padding-block: 20px;
+}
+.menu a {
+  text-align: center;
+  color: red;
+}
+
+h1 {
+  font-family: "Yeseva One", cursive;
+  font-size: 50px;
+  color: rgb(254, 252, 252);
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.menu_item a {
+  text-decoration: none;
+}
+
+.menu_item.active a {
+  text-decoration: underline;
+}
+
+.galeria-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 40px;
+}
+
+.galeria-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria-container-img {
+  width: 400px;
+  margin: 0 auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(242, 242, 244);
+  margin-right: 4rem;
+  margin-top: 2rem;
+  padding: 5rem;
+  height: auto;
+  text-align: center;
+  border-radius: 30px;
+}
+
+h3 {
+  color: floralwhite;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-modif {
+  width: 40%;
+  margin: 1rem;
+}
+
+.field_container {
+  color: red;
+  width: 40%;
+}
+
+label {
+  font-family: "Playfair Display", serif;
+}
+
+.iframe {
+  width: 100%;
+}
+
+.img_pole {
+  display: flex;
+  height: 100px;
+}
+
+.contenedor_cursos {
+  width: 100%;
+  background-color: rgb(84, 84, 88);
+  padding: 1, 5rem;
+  min-height: 150px;
+}
+
+.footer-imgs {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  border-top: solid 11px red;
+  border-right: solid 12px rgb(254, 254, 254);
+  border-bottom: solid 5px red;
+  border-left: solid 13px rgb(252, 252, 252);
+  margin-bottom: 2px;
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+.input-empleo {
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.trabaja_input {
+  text-align: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.info_principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  margin-top: 5rem;
+  gap: 3rem;
+}
+
+.frentebarber {
+  width: 550px;
+  margin-right: 10%;
+  border-radius: 15px;
+}
+
+.imgl {
+  width: 5rem;
+  height: 5rem;
+}
+
+table {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 500px;
+  margin-top: 3rem;
+  color: red;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  margin-top: 4rem;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .info_principal {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=estilos.css.map */

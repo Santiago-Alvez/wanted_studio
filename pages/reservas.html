@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="../scss/estilos.css">
+    <link rel="shortcut icon" href="../img/favicon_Barber.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul >                       
+                <li class="menu_item">
+                    <a class="links" href="../index.html" >Inicio</a></li>
+                <li class="menu_item">
+                    <a class="links" href="./cursos.html">Cursos</a></li>
+                    <img class="img_pole" src="../img/poleoriginak.png" alt=""/> 
+                <li class="menu_item active">
+                    <a class="links" href="./reservas.html">Reservas</a></li>
+                <li class="menu_item">
+                    <a class="links" href="./contacto.html">Contacto</a></li>
+                <li class="menu_item">
+                    <a class="links" href="./trabaja-con-nosotros.html">Trabaja con Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section>
+        <h1>Reserva tu turno</h1>  
+            <form class="container_form"action="reserva.php"> 
+                    <div class="field_container">
+                            <fieldset>
+                                    <legend>Datos Personales</legend>
+                                <div>               
+                                    <input class="input-modif" type="text"placeholder="Inrese su cedula"name="cedula" id="cedula"required>
+                                </div>
+                                <div>
+                                    <input class="input-modif" type="text"placeholder="Ingrese su nombre:"name="nombre" id="nombre"required>
+                                </div>
+                                <div>
+                                    <input class="input-modif" type="text"placeholder="Ingrese su apellido:"name="apellido" id="apellido"required>
+                                </div>                
+                                <div>
+                                    <input class="input-modif" type="email"placeholder="Ingrese su email:"name="email" id="email"required>
+                                </div>
+                                <div>
+                                    <input class="input-modif" type="tel"placeholder="Telefono: 000-111-222" id="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"required>
+                                </div>
+                            </fieldset>
+                </div>
+                <div class="galeria-container">
+                    <div>
+                        <img class="galeria-container-img" src="../img/Guille_Larrosa.jpg" alt="Guillermo-barbero"title="Guillermo Larrosa">
+                        <label for="guille">
+                        <input type="radio" name="seleccion" id="guille"value="guillermo"required>Guillermo</label>
+                    </div>
+                
+                    <div>
+                        <img class="galeria-container-img" src="../img/Nahuel_Figueredo.jpg" alt="Nahuel-barbero"title="Nahuel Figueredo">
+                        <label for="nahuel">
+                        <input type="radio" name="seleccion" id="nahuel"value="nahuel"required>Nahuel</label>
+                    </div>
+                
+                    <div>
+                        <img class="galeria-container-img" src="../img/Fede_Reyes.jpg" alt="Federico-barbero"title="Federico Reyes">
+                        <label for="fede">
+                        <input type="radio" name="seleccion" id="fede"value="fede"required>Federico</label>
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="reservadyh" for="reservadiayhora">Reserva dia y hora:</label>
+                    <input type="datetime-local" id="reservadiayhora" name="reservadiayhora"min="2023-01-01">
+                </div>
+
+                <button type="submit">Reserve</button>
+                <button type="reset">LIimpiador</button>
+                  
+                
+        </form>
+    </section>
+</main>
+<footer>
+    <section>
+        <div class="footer-imgs">
+        <div class="imgf"><a href="https://instagram.com" target="_blank"><img class="imgl" src="../img/footerig-removebg-preview.png" alt="Logo Instagram"></a></div>
+        <div class="imgf"><a href="https://web.whatsapp.com" target="_blank"><img class="imgl" src="../img/footerwsp-removebg-preview.png" alt="Logo Whatsap"></a></div>
+        <div class="imgf"><a href="https://facebook.com" target="_blank"><img class="imgl" src="../img/footerfb-removebg-preview.png" alt="Logo-Fb"></a></div>
+        </div>
+    <h3 class="copyright">
+        2023 ©  Wanted Studio | Todos los derechos reservados
+Aviso legal · Política de Privacidad · Política de Cookies · Política de Protección de Datos · Política de Redes Sociales </h3>
+    </section>
+</footer>
+</body>
+</html>
