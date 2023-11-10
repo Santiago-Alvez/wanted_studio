@@ -1,0 +1,43 @@
+header {
+    margin-bottom: 4rem;
+    gap: 20px;
+    grid-gap: 20px;
+
+    .img_pole {
+        display: flex;
+        height: 100px;
+    }
+
+    .nav { 
+        display:flex;
+        justify-content: space-between;
+        gap: 2;
+        flex-wrap: wrap;
+
+        .menu {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5rem;
+        
+            .li {
+            
+            font-family: 'Playfair Display', serif;
+            list-style-type: none;
+            font-size: 30px;
+            display: inline;
+            margin-right: 20px;
+            padding-block: 20px;
+            
+        
+            a {
+                text-align: center;
+                color:red;  
+           
+                }
+            
+            }
+        }
+    }
+}

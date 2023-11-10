@@ -10,14 +10,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-nav{
-    
-    display:flex;
-    justify-content: space-between;
-    gap: 2;
-    flex-wrap: wrap;
 
-}
 button{
     color: brown;
     background: rgb(255, 191, 71);
@@ -25,11 +18,7 @@ margin-top: 2rem;
 padding-right: 4rem;
 padding-top: 1rem;
 }
-header {
-    margin-bottom: 4rem;
-    gap: 20px;
-    grid-gap: 20px;
-}
+
 img{
     width: 100%;
     display:block;
@@ -42,30 +31,7 @@ body {
     padding: 2rem;
     background-color: rgb(9, 9, 9);
 }
-.menu {
-    
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-}
 
-
-.menu li {
-    
-    font-family: 'Playfair Display', serif;
-    list-style-type: none;
-    font-size: 30px;
-    display: inline;
-    margin-right: 20px;
-    padding-block: 20px;
-}
-.menu li a {
-    text-align: center;
-    color:red;  
-     
-}
 
 h1 {
 
@@ -140,10 +106,7 @@ label {
 ul {
     display: flex;
 }
-.img_pole {
-    display: flex;
-    height: 100px;
-}
+
 
 .contenedor_cursos{
     width: 100%;

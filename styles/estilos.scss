@@ -1,3 +1,5 @@
+@import "./partials/reset"; 
+@import "./partials/header";
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Sedgwick+Ave+Display&family=Skranji&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Sedgwick+Ave+Display&family=Skranji&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
@@ -10,6 +12,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+*img{
+    max-width: 100%;
+}
+*::selection{
+    background-color: white;
+    color: black;
+}
 
 button{
     color: brown;
@@ -17,7 +26,10 @@ button{
     margin-top: 2rem;  
     padding-right: 4rem;
     padding-top: 1rem;
-}
+    border-radius: 50%;
+    
+  }
+
 header {
     margin-bottom: 4rem;
     gap: 20px;
@@ -130,6 +142,7 @@ h3{
     margin: 1rem; 
 }
 .field_container {
+    margin-top: 4rem;
     color:red;
     width: 40%;
 }
@@ -137,7 +150,9 @@ label {
     font-family: 'Playfair Display', serif;
 }
 .iframe {
+    margin-bottom: 5rem;
     width: 100%; 
+    
 }
 
 .img_pole {
