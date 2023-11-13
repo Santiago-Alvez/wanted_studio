@@ -8,36 +8,42 @@ header {
         height: 100px;
     }
 
-    .nav { 
+    .navbar{ 
+        padding: 30px;
         display:flex;
         justify-content: space-between;
         gap: 2;
         flex-wrap: wrap;
-
-        .menu {
-            list-style-type: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5rem;
-        
-            .li {
+        background: linear-gradient(207deg, rgba(1,1,1,1) 0%, rgba(245,0,0,1) 14%, rgba(0,0,0,1) 27%, rgba(0,14,255,1) 40%, rgba(0,0,0,1) 52%, rgba(240,0,0,1) 65%, rgba(0,0,0,1) 77%, rgba(25,0,255,1) 89%, rgba(255,0,0,1) 100%); 
+        border-radius: 4rem;
+    
+            .menu {
+                
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5rem;
+                background: rgb(1,1,1);
+               
+                .li {
+                
+                    font-family: 'Playfair Display', serif;
+                    list-style-type: none;
+                    font-size: 30px;
+                    display: inline;
+                    margin-right: 20px;
+                    padding-block: 20px;
+                    
             
-            font-family: 'Playfair Display', serif;
-            list-style-type: none;
-            font-size: 30px;
-            display: inline;
-            margin-right: 20px;
-            padding-block: 20px;
-            
-        
-            a {
-                text-align: center;
-                color:red;  
-           
+                    a {
+                        text-align: center;
+                        color:red;  
+                        text-decoration: none;
+                        text-decoration:underline;
+                        }
+                    
+                    }
                 }
-            
             }
         }
-    }
-}

@@ -1,260 +1,310 @@
-@import "./partials/reset"; 
+@import "./partials/reset";
 @import "./partials/header";
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Sedgwick+Ave+Display&family=Skranji&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Sedgwick+Ave+Display&family=Skranji&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import"./partials/button";
+@import"./partials/keyframes";
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Sedgwick+Ave+Display&family=Skranji&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Sedgwick+Ave+Display&family=Skranji&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Pixelify+Sans:wght@400;700&family=Playfair+Display:wght@900&family=Young+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Josefin+Slab:ital,wght@1,300&family=Pixelify+Sans:wght@400;700&family=Playfair+Display:wght@900&family=Yeseva+One&family=Young+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Holtwood+One+SC&family=Josefin+Slab:ital,wght@1,300&family=Pixelify+Sans:wght@400;700&family=Playfair+Display:wght@900&family=Yeseva+One&family=Young+Serif&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-*img{
-    max-width: 100%;
-}
-*::selection{
-    background-color: white;
-    color: black;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Pixelify+Sans:wght@400;700&family=Playfair+Display:wght@900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Josefin+Slab:ital,wght@1,300&family=Pixelify+Sans:wght@400;700&family=Playfair+Display:wght@900&family=Yeseva+One&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Holtwood+One+SC&family=Josefin+Slab:ital,wght@1,300&family=Pixelify+Sans:wght@400;700&family=Playfair+Display:wght@900&family=Yeseva+One&family=Young+Serif&display=swap");
 
-button{
-    color: brown;
-    background: rgb(255, 191, 71);
-    margin-top: 2rem;  
-    padding-right: 4rem;
-    padding-top: 1rem;
-    border-radius: 50%;
-    
-  }
+button {
+  color: brown;
+  background: rgb(255, 191, 71);
+  margin-top: 2rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+  border-radius: 50%;
+}
 
 header {
-    margin-bottom: 4rem;
-    gap: 20px;
-    grid-gap: 20px;
+  margin-bottom: 4rem;
+  gap: 20px;
+  grid-gap: 20px;
 }
 
-img{
-    width: 100%;
-    display:block;
+img {
+  width: 100%;
+  display: block;
 }
 
 form label {
-    color: rgb(234, 234, 234);
+  color: rgb(234, 234, 234);
 }
 body {
-    padding: 2rem;
-    background-color: rgb(9, 9, 9);
+  padding: 2rem;
+  background-color: rgb(9, 9, 9);
 }
-.navbar{
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.navbar {
+    box-sizing: border-box;
+  padding: 0 20px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .menu {
-    
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+
+  li {
+    font-family: "Playfair Display", serif;
     list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    flex-wrap: wrap;
-    
-
-    li {
-    
-        font-family: 'Playfair Display', serif;
-        list-style-type: none;
-        font-size: 30px;
-        display: inline;
-        margin-right: 20px;
-        padding-block: 20px;
-        }
-     a {
-        text-align: center;
-        color:red;  
-        &:hover{
-            color: white;
-            background-color: red;
-            border-radius: 5px;
-        }
-        }
+    font-size: 30px;
+    display: inline;
+    margin-right: 20px;
+    padding-block: 20px;
+  }
+  a {
+    padding: 10px 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    &:hover {
+      color: white;
+      background-color: red;
+      border-radius: 5px;
+      
     }
-
-article h1{
-    margin-bottom: 3rem;
+  }
+}
+.carousel-item:hover{
+  transform: scale(1.6);
+}
+article h1 {
+  margin-bottom: 3rem;
 }
 h1 {
-
-    font-family: 'Yeseva One', cursive;
-    font-size: 50px;
-    color: rgb(254, 252, 252);
-    text-align: center;
+  font-family: "Yeseva One", cursive;
+  font-size: 50px;
+  color: rgb(254, 252, 252);
+  text-align: center;
+  text-shadow: 6px 6px 0 blue;
 }
-h2{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color:rgb(242, 242, 244);
-    text-align: center;
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(242, 242, 244);
+  text-align: center;
+  font-size: 1.5rem;
 }
-h3{
-    color: floralwhite;
-    font-family:Arial, Helvetica, sans-serif
-}
-
-.menu_item a{
-    text-decoration: none;
+h3 {
+  color: floralwhite;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu_item.active a{
-    text-decoration:underline;
+.menu_item a {
+  text-decoration: none;
 }
-.galeria-container{
-    display: flex;  
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-    margin-top: 40px;
-    }
-.galeria-container > div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.menu_item.active a {
+  text-decoration: underline;
 }
-.galeria-container-img{
-    width: 400px;
-    margin: 0 auto;
-    object-fit: contain;
+.galeria-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 40px;
+}
+.galeria-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.galeria-container-img {
+  width: 400px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.trabajaConNosotros{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+
+}
+
+.boton_container{
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .container_form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
+
 .input-modif {
-    width: 40%;
-    margin: 1rem; 
+  width: 40%;
+  margin: 1rem;
 }
+
 .field_container {
-    margin-top: 4rem;
-    color:red;
-    width: 40%;
+  margin-top: 4rem;
+  color: red;
+  width: 40%;
 }
+
 label {
-    font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
+
 .iframe {
-    margin-bottom: 5rem;
-    width: 100%; 
-    
+  margin-bottom: 5rem;
+  width: 100%;
 }
 
 .img_pole {
-    display: flex;
-    height: 100px;
+  display: flex;
+  height: 100px;
 }
 
-.contenedor_cursos{
-    width: 100%;
-    background-color: rgb(84, 84, 88);
-    padding: 1,5rem;  
+.contenedor_cursos {
+  width: 100%;
+  background-color: rgb(84, 84, 88);
+  padding: 1, 5rem;
 }
 
 .footer-imgs {
-    
-    display: flex;
-    align-items:center;
-    text-align: center;
-	justify-content: space-evenly;
-    border-top:solid 11px red;
-    border-right:solid 12px rgb(254, 254, 254);
-    border-bottom: solid 5px red;
-    border-left: solid 13px rgb(252, 252, 252);
-    
-    margin-bottom: 2px;
-    
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  border-top: solid 11px red;
+  border-right: solid 12px rgb(254, 254, 254);
+  border-bottom: solid 5px red;
+  border-left: solid 13px rgb(252, 252, 252);
+  margin-bottom: 2px;
 }
-p{
-    text-align: center;
-    color: white;
+p {
+  text-align: center;
+  color: white;
 }
-.input-empleo{
-    
-    align-items:center;
-    margin-bottom: 4rem;
-    
+.input-empleo {
+  align-items: center;
+  margin-bottom: 4rem;
 }
-.trabaja_input{
-    
-    text-align: center ;
-    justify-content: center;
-    margin-top: 3rem;
+.trabaja_input {
+  text-align: center;
+  justify-content: center;
+  margin-top: 3rem;
 }
-.info_principal{
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    margin-top: 5rem;
-    gap: 3rem;
+.info_principal {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  margin-top: 5rem;
+  gap: 3rem;
 }
-.frentebarber{
-    width: 550px;
-    margin-right: 10%;
-    border-radius: 15px;
+.frentebarber {
+  width: 550px;
+  margin-right: 10%;
+  border-radius: 15px;
 }
-.imgl{
-    width: 5rem;
-    height: 5rem;
+.imgl {
+  width: 5rem;
+  height: 5rem;
 }
-.precios{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    width: 60%;
-    margin: 10rem auto 4rem auto;
-   
-
-}
-.contenedor_precio{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid red;
-}
-.cursos{
-    display:grid;
-    grid-template-columns: 1fr;
-    gap: 5rem;
-    margin-top: 5rem;
-    flex-wrap: wrap;
-    
-    }
-
-.underline p{
-    border-bottom: 4px solid blue;
-    font-style: italic;
-    font-size: 1rem;
+.precios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 60%;
+  margin: 10rem auto 4rem auto;
 }
 
-footer{
-    margin-top: 4rem;
+.contenedor_precio {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid red;
 }
-@media (min-width: 530px){
-    .navbar{
-        flex-direction: row;
-    }
-    .precios,.cursos{
-        grid-template-columns: 1fr 1fr;
-    }
+.grid {
+  padding: 6rem;
+  gap: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "item1 item2"
+  "item1 item2";
 }
-@media(min-width: 950px){
-    .info_principal{
-        grid-template-columns: 1fr 1fr;
-    }
+.grid__item1{
+grid-area: item1;
+
+
+
+}
+.grid__item2{
+  grid-area: item2;
+}
+.img__cortes{
+  height: 400px;
+  width: 300px;
+  border-radius: 4rem;
+  
+}
+.cursos {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  margin-top: 5rem;
+  flex-wrap: wrap;
 }
 
+.underline p {
+  border-bottom: 4px solid blue;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+footer {
+  margin-top: 4rem;
+}
+.info_animada{
+    animation-duration: 6s;
+    animation-name: slidein;
+}
+@media (min-width: 530px) {
+  .navbar {
+    flex-direction: row;
+  }
+  .precios,
+  .cursos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 950px) {
+  .info_principal {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 530px) {
+    .galeria-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+    .field_container{
+    width: 80%;
+    }
+    .input{
+    width: 100%;
+    }
+    .input-modif{
+    width: 80%;
+    }
+    #guille,#nahuel,#fede{
+        width: 25px;
+    }
+}

@@ -14,9 +14,10 @@
 button{
     color: brown;
     background: rgb(255, 191, 71);
-margin-top: 2rem;  
-padding-right: 4rem;
-padding-top: 1rem;
+    margin-top: 2rem;  
+    padding-right: 4rem;
+    padding-top: 1rem;
+    align-items: center;
 }
 
 img{
@@ -32,7 +33,6 @@ body {
     background-color: rgb(9, 9, 9);
 }
 
-
 h1 {
 
     font-family: 'Yeseva One', cursive;
@@ -44,13 +44,7 @@ h1 {
 section img{
     margin-block: 4rem;
 }
-.menu_item a{
-    text-decoration: none;
-}
 
-.menu_item.active a{
-    text-decoration:underline;
-}
 .galeria-container{
     display: flex;  
     align-items: center;
@@ -133,7 +127,7 @@ p{
     text-align: center;
     color: white;
 }
-.input-empleo{
+.input_empleo{
     
     align-items:center;
     margin-bottom: 4rem;

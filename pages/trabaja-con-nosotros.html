@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav class="menu">
-            <ul >                       
+            <ul class="navbar">                       
                 <li class="menu_item">
                     <a class="links" href="../index.html" >Inicio</a></li>
                 <li class="menu_item">
@@ -20,7 +20,7 @@
                     <a class="links" href="./reservas.html">Reservas</a></li>
                 <li class="menu_item">
                     <a class="links" href="./contacto.html">Contacto</a></li>
-                    <img class="img_pole" src="../img/poleoriginak.png" alt=""/>
+                    <img class="img_pole" src="../img/poleoriginak.png" alt="Pole diseno."/>
                 <li class="menu_item active">
                     <a class="links" href="./trabaja-con-nosotros.html">Trabaja con Nosotros</a></li>
             </ul>
@@ -28,21 +28,23 @@
     </header>
     <main>
         <div class="trabaja_input">
-            <input class="input-empleo" type="text"placeholder="Nombre y Apellidos"name="nombre" id="nombre"required>
+            <input class="input_empleo" type="text"placeholder="Nombre y Apellidos"name="nombre" id="nombre"required>
         
-            <input class="input-empleo" type="email"placeholder="Email:"name="email" id="email"required>
+            <input class="input_empleo" type="email"placeholder="Email:"name="email" id="email"required>
         
-            <input class="input-empleo" type="tel"placeholder="Telefono: 000-111-222" id="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"required>
+            <input class="input_empleo" type="tel"placeholder="Telefono: 000-111-222" id="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"required>
 
-            <input class="input-empleo" type="text"placeholder="Profesion:"name="apellido" id="apellido"required>   
+            <input class="input_empleo" type="text"placeholder="Profesion:"name="apellido" id="apellido"required>   
             
         </div>
             <p> Adjunte su CV(formato PDF): 
             <label for="myfile">Adjunte archivo:</label>
             <input type="file" id="myfile" name="myfile"> 
             </p>
+        <div class="trabajaConNosotros">
             <textarea class="txtarea" name="comentarios" id="" cols="30" rows="10"placeholder="Escriba algun Comentarios"></textarea> 
-            <button type="submit">Enviar</button>
+            <button class="btnGeneric" type="submit">Enviar</button>
+        </div>
     </main>
     <footer>
             <section>
