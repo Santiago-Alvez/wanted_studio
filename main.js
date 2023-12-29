@@ -1,44 +1,58 @@
 function reservarTurno() {
+  const reservas = [];
     // Bucle para permitir múltiples reservas
     while (true) {
       // Preguntar al usuario si desea reservar un turno
       let respuesta = prompt("¿Quieres reservar un turno? (Sí/No)");
-  
+     
       // Convertir la respuesta a minúsculas para hacer la comparación insensible a mayúsculas
       respuesta = respuesta.toLowerCase();
   
       // Condición para determinar si el usuario quiere reservar o no
       if (respuesta === "si") {
         // Solicita el nombre del barbero
+        
         let nombreBarbero = prompt("Elige un barbero (Guillermo, Nahuel, Federico):");
-  
-        // Para seleccionar un barbero y otro
-        switch (nombreBarbero.toLowerCase()) {
-          case "guillermo":
-          case "nahuel":
-          case "federico":
-            // Solicitar la hora y fecha
-            let horaTurno = prompt("Ingresa la hora del turno (formato HH:mm):");
-            let fechaTurno = prompt("Ingresa la fecha del turno (formato DD/MM/YYYY):");
-  
-            // Mostrar un mensaje de confirmación con los detalles del turno
-            alert("Turno reservado con éxito!\nBarbero: " + nombreBarbero + "\nHora: " + horaTurno + "\nFecha: " + fechaTurno);
-            break;
-          default:
-            // Si el nombre del barbero no existe o esta mal escrito, muestra un mensaje de error
-            alert("Barbero no reconocido. Por favor, elige entre Guillermo, Nahuel o Federico.");
-            break;
+        nombreBarbero = nombreBarbero.toLowerCase();
+        if (nombreBarbero !== "nahuel" && nombreBarbero !== "guillermo" && nombreBarbero !== "federico") {
+        
+          alert("Nombre no válido. Por favor, ingrese Nahuel, Guillermo o Federico.");
+        reservarTurno();
         }
-      } else if (respuesta === "no") {
+        
+        let nombreCliente = prompt("Ingrese su nombre: ")
+        let horaTurno = prompt("Ingresa la hora del turno (formato HH:mm):");
+        let fechaTurno = prompt("Ingresa la fecha del turno (formato DD/MM/YYYY):");
+        
+            
+            
+            let datosReserva = {
+              nombreB : nombreBarbero,
+              nombreC : nombreCliente,
+              horaT : horaTurno,
+              fecha : fechaTurno,
+          }
+          reservas.push(datosReserva);
+          
+            /* Mostrar un mensaje de confirmación con los detalles del turno
+          
+            alert(`Turno reservado con éxito! Barbero: ${datosReserva.nombreB} Cliente: ${datosReserva.nombreC} Hora: ${datosReserva.horaT} Fecha:  ${datosReserva.fecha}`);*/
+          // Devuelvo desde el array
+            for(let i=0; i<reservas.length;i++){
+              alert(`Turno reservado con exito
+                  Barbero: ${datosReserva.nombreB} 
+                  Cliente: ${datosReserva.nombreC }
+                  Fecha: ${datosReserva.fecha} 
+                  Hora: ${datosReserva.horaT}`)
+            }
+                   
+      } else{
         // Si el usuario no quiere reservar, salir del bucle
         alert("Gracias. Hasta luego, vuelva pronto!");
-        break;
-      } else {
-        // Si la respuesta no es válida, mostrar un mensaje de error y repetir el bucle
-        alert("Por favor, ingresa 'Sí' o 'No'.");
       }
     }
-  }
+}
+
   
   // Para reservar turno llamar a la misma.
   reservarTurno();
